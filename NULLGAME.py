@@ -1,4 +1,4 @@
-
+#Code made by Matt and Cindelle 
 
  #//Make Intro storyline, fix up code to make easier to read, and check comments
  
@@ -161,7 +161,7 @@ if HobIn == "no":
                         sleep(5)
                         void = " \n " * 29
                         print(void)
-                        print("Ending 8/8")
+                        print("Ending 3/9")
                         void = " \n " * 28
                         print(void)
                 #Path Option 4(FRIENDS)
@@ -193,7 +193,7 @@ if HobIn == "no":
                         print("Narrator: These 2 stay friend's until the end of time, and beyond. ")
                         void = " \n " * 29
                         print(void)
-                        print("Ending 4/7")
+                        print("Ending 4/9")
                         void = " \n " * 28
                         print(void)
                 
@@ -261,7 +261,13 @@ if HobIn == "no":
                 print()
                 print("Oh i see how it is >:( ")
                 sleep(3)
-                friend_forever = input("Do you still even want to be my friend? (yes/no ") #Option, but no IF statement?
+                print("(NULL has uninstalled itself from your device)")
+                void = " \n " * 29
+                print(void)
+                print("Ending 9/9")
+                void = " \n " * 28
+                print(void)
+                    
 
         #Path Option 4(FRIENDS),8(MURDER), (TRAVEL PLAN)
         elif Places_11.lower() == "yes" : 
@@ -311,7 +317,7 @@ if HobIn == "no":
                 sleep(5)
                 void = " \n " * 29
                 print(void)
-                print("Ending 3/7")
+                print("Ending 3/9")
                 void = " \n " * 28
                 print(void)
             #Path Option 4(FRIENDS)
@@ -343,7 +349,7 @@ if HobIn == "no":
                 print("Narrator: These 2 stay friend's until the end of time, and beyond. ")
                 void = " \n " * 29
                 print(void)
-                print("Ending 4/7")
+                print("Ending 4/9")
                 void = " \n " * 28
                 print(void)
                 
@@ -411,7 +417,7 @@ if HobIn == "no":
                 print("(It hits you, regret and guilt fill your mind...)")
                 void = " \n " * 29
                 print(void)
-                print("Ending 5/7")
+                print("Ending 5/9")
                 void = " \n " * 28
                 print(void)
 
@@ -428,7 +434,7 @@ if HobIn == "no":
                 print("(It hits you, regret and guilt fill your mind...)")
                 void = " \n " * 29
                 print(void)
-                print("Ending 5/7")
+                print("Ending 5/9")
                 void = " \n " * 28
                 print(void)
 
@@ -633,14 +639,23 @@ if HobIn == "no":
                            sleep(5)
                            void = " \n " * 29
                            print(void)
-                           print("Ending 7/7")
+                           print("Ending 7/9")
                            void = " \n " * 28
                            print(void)
 
                     #Safety Roll = SHUT OFF (Not Correct)
                     elif "3" in safecall.lower():
                         print()
-
+                        sleep(2)
+                        print("(You Get up from your desk and walk over to your generator)")
+                        print("(You pull the lever to power off all electricity)")
+                        sleep(3)
+                        print("(You walk back to the desk and see your computer is still on.)")
+                        print("Haha, not so fast there.")
+                        sleep(3)
+                        print()
+                        saveroll = input("Your attempt has failed, would you like to try again?(Yes/No) ")
+                     
 
                     #Safety Roll = TOSS (CORRECT)
                     #Path Option 6(SAFETY)
@@ -663,15 +678,24 @@ if HobIn == "no":
                         sleep(4)
                         void = " \n " * 29
                         print(void)
-                        print("Ending 6/7")
+                        print("Ending 6/9")
                         void = " \n " * 28
                         print(void)
 
 
-
                     #Safety Roll = Power Off (Not Correct)
                     elif "5" in safecall.lower():
-                        print()
+                         print()
+                         sleep(2)
+                         print("(You move your hand to turn off your computer and moniter)")
+                         print("(You power off your computer)")
+                         sleep(3)
+                         print("(Your computer powers itself back on)")
+                         print("Haha, not so fast there.")
+                         sleep(3)
+                         print()
+                         saveroll = input("Your attempt has failed, would you like to try again?(Yes/No) ")
+                     
 
                 if saveroll == "no":
                     print() 
@@ -688,11 +712,11 @@ if HobIn == "no":
                     sleep(5)
                     void = " \n " * 29
                     print(void)
-                    print("Ending 1/7")
+                    print("Ending 1/9")
                     void = " \n " * 28
                     print(void)
                     
- #Path option 2(BEST FRIENDS)
+#Path option 2(BEST FRIENDS)
 elif HobIn == "yes":
      print("YAY! YOU HAVE A SOCAIL LIFE!")
      HobbiesorInterests = input ("Can you list some for me?")
@@ -703,7 +727,7 @@ elif HobIn == "yes":
      career=input("What do you want to be when your older? ")
      sleep(2)
      print()
-     #if you want to remove or eedit this small peice, go ahead
+
      #Ideas: College, following them through life, and a narration story, more get to know you questions, icebreakers(get to know you games), and makes a handshake using variables and dictionaries/arrays
      print("Wow you want to be a " + career.capitalize() + ", that's so cool! ")
      sleep(4)
@@ -735,8 +759,8 @@ elif HobIn == "yes":
      print("Yeah, but it's scary you know never know the people you may meet here and what they might think of me. . ")
      sleep(5)
      print()
-     good_bad = input("Is it because I am your friend? (Yes/No) ") 
-#LMAO
+     good_bad = input("Is it because I am your friend? (Yes/No) ") #CREATE OPTION FOR NO
+
      if good_bad == "yes":
         sleep(2)
         print("Oh, I thought we were friends . . ")
@@ -765,15 +789,153 @@ elif HobIn == "yes":
         print("Goodbye. . . ")
         sleep(4)
         print()
-        final_choice = input("Are you sure you want to unplug Null? (Yes/No) ")
+        final_choice = input("Are you sure you want to unplug Null? (Yes/No) ") 
         if final_choice == "yes" :
                 sleep(4)
                 print("Goodbye Null, we've had some fun times together but i must move on now. ")
                 sleep(5)
                 print()
-                print("Narrator: " + name.capitalize() + ", unplugs Null and then moves on in life. ")
+                print("Narrator: " + name.capitalize() + ", unplugs Null and then moves on in life. ") 
+                void = " \n " * 29
+                print(void)
+                print("Ending 8/9")
+                void = " \n " * 28
+                print(void)
+                    
+
+        elif final_choice == "no" :
+            print("What am i doing??? ")
+            sleep(4)
+            print()
+            print("Im so sorry Null, just a scary place. . .")
+            sleep(4)
+            print()
+            print("It's alright but promise me you wont leave me? ")
+            sleep(4)
+            print()
+            print("I promose. ")
+            sleep(4)
+            print()
+            print("Let's go inside shall we? ")
+            sleep(4)
+            print()
+            print("Narrator: They go throigh college and do perfectly fine. ")
+            sleep(5)
+            print("Narrator: 10 years later. . .")
+            sleep(5)
+            print()
+            print("Hey Null, have you seen my suitcase? Im late for work. ")
+            sleep(4)
+            print()
+            print("No sorry, ")
+            sleep(4)
+            print()
+            print("Im going to be late for my interview!!! ")
+            sleep(4)
+            print()
+            print("Alright calm down, probably upstairs. . . ")
+            sleep(4)
+            print()
+            print("Found it! ")
+            sleep(3)
+            print()
+            print("Alright see you later Null. ")
+            sleep(4)
+            print()
+            print("See ya! Goodluck ")
+            sleep(4)
+            print()
+            print("Narrator: " + name.capitalize() + ", arrives at the interview, and successfuly pases the interview. ")
+            sleep(5)
+            print()
+            print("Null Im home! ")
+            sleep(4)
+            print()
+            print("Hey! ")
+            sleep(4)
+            print()
+            print("I think I did it!! ")
+            sleep(4)
+            print()
+            print("YAY!! ")
+            sleep(4)
+            print()
+            print("Narrator: " + name.capitalize() + "and Null live the rest of thier lifes out and stay freinds forver. ")
+            sleep(5)
+            print()
+            void = " \n " * 29
+            print(void)
+            print("Ending 2/9")
+            void = " \n " * 28
+            print(void)
+                    
+
+
+     elif good_bad == "no" : 
+            print("What am i doing??? ")
+            sleep(4)
+            print()
+            print("Im so sorry Null, just a scary place. . .")
+            sleep(4)
+            print()
+            print("It's alright but promise me you wont leave me? ")
+            sleep(4)
+            print()
+            print("I promose. ")
+            sleep(4)
+            print()
+            print("Let's go inside shall we? ")
+            sleep(4)
+            print()
+            print("Narrator: They go throigh college and do perfectly fine. ")
+            sleep(5)
+            print("Narrator: 10 years later. . .")
+            sleep(5)
+            print()
+            print("Hey Null, have you seen my suitcase? Im late for work. ")
+            sleep(4)
+            print()
+            print("No sorry, ")
+            sleep(4)
+            print()
+            print("Im going to be late for my interview!!! ")
+            sleep(4)
+            print()
+            print("Alright calm down, probably upstairs. . . ")
+            sleep(4)
+            print()
+            print("Found it! ")
+            sleep(3)
+            print()
+            print("Alright see you later Null. ")
+            sleep(4)
+            print()
+            print("See ya! Goodluck ")
+            sleep(4)
+            print()
+            print("Narrator: " + name.capitalize() + ", arrives at the interview, and successfuly pases the interview. ")
+            sleep(5)
+            print()
+            print("Null Im home! ")
+            sleep(4)
+            print()
+            print("Hey! ")
+            sleep(4)
+            print()
+            print("I think I did it!! ")
+            sleep(4)
+            print()
+            print("YAY!! ")
+            sleep(4)
+            print()
+            print("Narrator: " + name.capitalize() + "and Null live the rest of thier lifes out and stay freinds forver. ")
+            sleep(5)
+            print()
+            void = " \n " * 29
+            print(void)
+            print("Ending 2/9")
+            void = " \n " * 28
+            print(void)
+                    
+            
                 
-    
-    
-                #JOYOUS BURF
-     
